@@ -1,0 +1,14 @@
+.statistic {
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    opacity: .6;
+}
+
+.value {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}

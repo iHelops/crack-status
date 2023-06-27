@@ -1,0 +1,23 @@
+.searchWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search {
+    outline: none;
+    padding: 15px 20px 15px 68px;
+    font-family: 'Lab Grotesque', sans-serif;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.70);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
+    width: 100%;
+}
+
+.icon {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    pointer-events: none;
+}

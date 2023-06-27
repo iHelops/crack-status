@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lab Grotesque', sans-serif;
+    color: white;
+    background-color: #0E0E0E;
+    background-image: url('/images/gradient.png'), url('/images/gradient-bottom.png');
+    background-repeat: no-repeat,no-repeat;
+    background-position: top center, bottom center;
+    min-height: 100vh;
+    position: relative;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+span {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+p {
+    opacity: .6;
+    font-size: 18px;
+    font-family: 'Lab Grotesque', sans-serif;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+table {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border-collapse: collapse;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+    width: 100%;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+td {
+    padding: 15px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.container {
+    max-width: 720px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+.bar-of-progress {
+    z-index: 1000;
+}

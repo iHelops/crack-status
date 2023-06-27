@@ -1,0 +1,51 @@
+.gameHeader {
+    width: 100%;
+    height: 275px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gameHeader:hover .image {
+    transform: scale(1.15);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.info {
+    width: max-content;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 15px 15px 0 0;
+    background: #131313;
+    backdrop-filter: blur(20px);
+    display: flex;
+    padding: 10px 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+@supports (backdrop-filter: blur(20px)) {
+    .info {
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+.info h2 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+}

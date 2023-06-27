@@ -1,0 +1,27 @@
+.header {
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(25px);
+}
+
+.scroll {
+    background: rgba(14, 14, 14, 1);
+}
+
+@supports (backdrop-filter: blur(25px)) {
+    .scroll {
+        background: rgba(14, 14, 14, 0.7);
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search:hover {
+    cursor: pointer;
+}

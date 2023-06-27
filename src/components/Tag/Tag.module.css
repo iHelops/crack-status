@@ -1,0 +1,19 @@
+.tag {
+    display: inline-flex;
+    padding: 5px 10px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.color {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.text {
+    opacity: .6;
+    font-size: 14px;
+}
