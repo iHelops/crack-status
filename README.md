@@ -3,7 +3,8 @@
   <h1 align="center">CrackStatus</h1>
 </p>
 
-A site for tracking game hacking status, created on Nextjs and [GameStatus Public API](https://gamestatus.info/), deployed on [Vercel](https://vercel.com?utm_source=Craigary&utm_campaign=oss).
+A site for tracking game hacking status, created on Nextjs and [GameStatus Public API](https://gamestatus.info/), deployed on [Vercel](https://vercel.com?utm_source=Craigary&utm_campaign=oss).<br>
+Link: [https://crackstatus.helops.ru/](https://crackstatus.helops.ru/)
 
 <details>
   <summary>Screenshot</summary>
