@@ -18,7 +18,7 @@ const Index: Page<IIndexProps> = ({games}) => {
                 <meta name="keywords" content={keywords}/>
                 <meta name="yandex-verification" content="1c9c57f7b93887bd" />
             </Head>
-            <GameList layout='vertical' games={games.popular}/>
+            <GameList layout='vertical' games={games.popular} priority/>
             <GameList title='Популярные' games={games.hots}/>
             <GameList title='Ближайшие релизы' games={games.unreleased}/>
         </>

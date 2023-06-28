@@ -6,7 +6,7 @@ import Tag from "../Tag/Tag";
 import {statusColors} from "../../helpers/status-colors";
 import Card from "../Card/Card";
 
-const GameCard: FC<IGameCardProps> = ({layout, status, readableStatus, title, image}) => {
+const GameCard: FC<IGameCardProps> = ({layout, status, readableStatus, title, image, priority}) => {
     const isVertical = layout === 'vertical'
 
     const getWrapper = (children: React.ReactNode) => (
@@ -23,7 +23,7 @@ const GameCard: FC<IGameCardProps> = ({layout, status, readableStatus, title, im
                     src={image}
                     alt=''
                     fill
-                    priority
+                    priority={priority}
                     sizes='(max-width: 425px) 384px, 33vw'
                 />
             </div>

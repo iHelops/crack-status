@@ -5,7 +5,7 @@ import GameCard from "../GameCard/GameCard";
 import style from './GameList.module.css'
 import Link from "next/link";
 
-const GameList: FC<IGameListProps> = ({games, title, layout}) => {
+const GameList: FC<IGameListProps> = ({games, title, layout, priority}) => {
     return (
         <div className={style.gameList}>
             {title && <h2>{title}</h2>}
@@ -19,6 +19,7 @@ const GameList: FC<IGameListProps> = ({games, title, layout}) => {
                                 readableStatus={item.readableStatus}
                                 status={item.status}
                                 layout={layout}
+                                priority={priority}
                             />
                         </Link>
                     </Col>

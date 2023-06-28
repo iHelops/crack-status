@@ -5,5 +5,6 @@ export interface IGameCardProps {
     image: string,
     title: string,
     readableStatus: string,
-    status: GameStatus
+    status: GameStatus,
+    priority?: boolean
 }
