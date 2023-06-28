@@ -16,6 +16,7 @@ const Index: Page<IIndexProps> = ({games}) => {
         <>
             <Head>
                 <meta name="keywords" content={keywords}/>
+                <meta name="yandex-verification" content="be7256453f1c57a6" />
             </Head>
             <GameList layout='vertical' games={games.popular}/>
             <GameList title='Популярные' games={games.hots}/>
