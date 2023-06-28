@@ -7,13 +7,13 @@ import GameStats from "../../components/GameStats/GameStats";
 import Head from "next/head";
 
 const Game: Page<IGameProps> = ({game}) => {
-    const title = `${game.title} - CrackStatus`
+    const title = `Статус взлома ${game.title} - CrackStatus`
 
     return (
         <>
             <Head>
                 <title>{title}</title>
-                <meta name="keywords" content={`${game.title}, ${game.hackedGroups.join(', ')}`} />
+                <meta name="keywords" content={`${game.title}, ${game.hackedGroups.join(', ')}, ${game.protections.join(', ')}`} />
                 <meta name="description" content={game.description} />
             </Head>
 
@@ -32,19 +32,21 @@ const Game: Page<IGameProps> = ({game}) => {
                 <p>{game.description}</p>
             </div>
 
-            <div style={{marginTop: 50}}>
-                <h2 style={{marginBottom: 20}}>Характеристики</h2>
-                <table>
-                    <tbody>
+            {game.specsInfo.length > 0 && (
+                <div style={{marginTop: 50}}>
+                    <h2 style={{marginBottom: 20}}>Характеристики</h2>
+                    <table>
+                        <tbody>
                         {game.specsInfo.map((item, index) => (
                             <tr key={index}>
                                 <td style={{width: '30%', minWidth: '150px'}}>{item.device}</td>
                                 <td style={{wordBreak: 'break-all'}}>{item.model}</td>
                             </tr>
                         ))}
-                    </tbody>
-                </table>
-            </div>
+                        </tbody>
+                    </table>
+                </div>
+            )}
         </>
     );
 };

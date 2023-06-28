@@ -12,7 +12,7 @@ const Search: Page = () => {
     return (
         <>
             <Head>
-                <title>Поиск - CrackStatus</title>
+                <title>Поиск взломанных игр - CrackStatus</title>
             </Head>
             <SearchModal open onClose={onClose}/>
         </>
