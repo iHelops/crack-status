@@ -19,7 +19,13 @@ const GameCard: FC<IGameCardProps> = ({layout, status, readableStatus, title, im
     const card = (
         <Card className={`${style.card} ${isVertical && style.vertical}`}>
             <div className={style.image}>
-                <Image src={image} alt='' width={0} height={0} sizes="100vw"/>
+                <Image
+                    src={image}
+                    alt=''
+                    fill
+                    priority
+                    sizes='(max-width: 425px) 384px, 33vw'
+                />
             </div>
             <div className={style.info}>
                 <h3>{title}</h3>
