@@ -34,7 +34,7 @@ const Header = () => {
             <header className={`${style.header} ${!scrollAtTop ? style.scroll : ''}`}>
                 <div className={`container ${style.wrapper}`}>
                     <Link href='/'>
-                        <Image src='/images/favicon.svg' alt='CrackStatus' width={50} height={50} />
+                        <Image src='/favicon.svg' alt='CrackStatus' width={50} height={50} />
                     </Link>
                     <Link
                         href={{
