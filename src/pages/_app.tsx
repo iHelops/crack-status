@@ -12,7 +12,7 @@ const App = ({Component, pageProps}) => {
             <Head>
                 <title>Взлом новых игр: статус взлома Denuvo - CrackStatus</title>
                 <meta name="description" content='Последняя информация о новых взломах игр от EMPRESS, Codex, CPY. На CrackStatus вы найдете информацию о взломах более 15 тысяч игр для ПК.' />
-                <link rel="icon" href="/images/logo.svg"/>
+                <link rel="icon" href="/images/favicon.svg" type='image/svg+xml'/>
             </Head>
             <Layout>
                 <Component {...pageProps} />
