@@ -6,6 +6,7 @@ module.exports = {
         URL: isDev ? 'http://localhost:3000' : 'https://crackstatus.helops.ru'
     },
     images: {
+        unoptimized: true,
         remotePatterns: [
             {
                 protocol: "https",
